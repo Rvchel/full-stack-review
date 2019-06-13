@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom'
 import axios from 'axios';
 
 class Landing extends Component {
@@ -13,7 +14,9 @@ class Landing extends Component {
     render() {
         return (
             <div>
-                Landing
+                <Link to='/login'><button>Login</button></Link>
+                <Link to='/register'><button>Create Account</button></Link>
+                <button>Logout</button>
             </div>
         )
     }
